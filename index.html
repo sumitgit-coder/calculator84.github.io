@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    <title>Simple calculator in javascript</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div class="keyboard">
+                <form name="forms">
+                    <label class="copy" style="text-align: center; font-size:40px; color: rgba(110, 180, 245, 0.945);">calculator</label>
+                    <input type="text" name="answer" id="answerstyle" class="field">
+
+
+                    <input type="button" value=" C " class="operator" onclick="forms.answer.value = ''" id="clear">
+                    <input type="button" value=" CE " class="operator" onclick="forms.answer.value = Math.floor(forms.answer.value/10)" id="backspace">
+                    <input type="button" value=" sq " class="operator" onclick="forms.answer.value =(forms.answer.value)*(forms.answer.value)">
+                    <input type="button" value=" cube " class="operator" onclick="forms.answer.value =(forms.answer.value)*(forms.answer.value)*(forms.answer.value)">
+
+                    <input type="button" value=" = " class="operator" onclick="forms.answer.value ='Ans = '+eval(forms.answer.value)">
+
+                    <input type="button" value="&#8333;" class="operator" onclick="forms.answer.value +='('">
+                    <input type="button" value="&#8334;" class="operator" onclick="forms.answer.value +=')'">
+
+
+
+                    <input type="button" value="&Pi;" class="operator" onclick="forms.answer.value +=Math.PI">
+                    <input type="button" value=" log() " class="operator" onclick="forms.answer.value =Math.log(forms.answer.value)">
+
+
+                    <input type="button" value="&#247;" class="operator" onclick="forms.answer.value +='/'">
+                    <input type="button" value="&lt;" class="operator" onclick="forms.answer.value +='<'">
+                    <input type="button" value="&gt;" class="operator" onclick="forms.answer.value +='>'">
+
+                    <input type="button" value=" . " class="operator" onclick="forms.answer.value +='.'">
+
+                    <input type="button" value="&#8730;" class="operator" onclick="forms.answer.value =Math.sqrt(forms.answer.value)">
+                    <input type="button" value="&times;" class="operator" onclick="forms.answer.value +='*'">
+
+
+
+                    <input type="button" value=" 1 " class="number" onclick="forms.answer.value +='1' ">
+                    <input type="button" value=" sin " class="operator" onclick="forms.answer.value =Math.sin((forms.answer.value)*Math.PI/180)">
+                    <input type="button" value=" cos " class="operator" onclick="forms.answer.value =Math.cos((forms.answer.value)*Math.PI/180)">
+                    <input type="button" value=" tan " class="operator" onclick="forms.answer.value =Math.tan((forms.answer.value)*Math.PI/180)">
+
+
+
+                    <input type="button" value=" + " class="operator" onclick="forms.answer.value +='+'">
+                    <input type="button" value=" 2 " class="number" onclick="forms.answer.value +='2' ">
+
+                    <input type="button" value=" 4 " class="number" onclick="forms.answer.value +='4' ">
+
+                    <input type="button" value=" 6 " class="number" onclick="forms.answer.value +='6' ">
+
+                    <input type="button" value=" 8 " class="number" onclick="forms.answer.value +='8' ">
+                    <input type="button" value=" - " class="operator" onclick="forms.answer.value +='-'">
+
+                    <!-- <input type="button" value="&#8804;" class="operator" onclick="forms.answer.value +='≤'">
+                    <input type="button" value="&#8805;" class="operator" onclick="forms.answer.value +='≥'"> -->
+
+
+
+                    <input type="button" value=" 3 " class="number" onclick="forms.answer.value +='3' ">
+
+                    <input type="button" value=" 5 " class="number" onclick="forms.answer.value +='5' ">
+                    <input type="button" value=" 7 " class="number" onclick="forms.answer.value +='7' ">
+
+
+
+
+
+
+                    <input type="button" value=" 9 " class="number" onclick="forms.answer.value +='9' ">
+                    <input type="button" value="%" class="operator" onclick="forms.answer.value +='%'">
+
+
+                    <input type="button" value=" 00 " class="operator" onclick="forms.answer.value +='00'">
+
+                    <input type="button" value=" 0 " class="operator" onclick="forms.answer.value +='0' ">
+
+
+
+                    <br><br>
+                </form>
+
+            </div>
+
+        </div>
+        <span class="copy">
+            Copyright 2020-21 &copy; EAZY CODES.
+        </span>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+onclick event :-
+The onclick JavaScript event occurs when the user clicks on an element. 
+It runs a specified line of code when you click a HTML object that has the onclick attribute. 
+The JavaScript onclick functions can be triggered by object. onclick or object. addEventListener
+
+What operator in javascript :-
+JavaScript includes operators as in other languages. 
+An operator performs some operation on single or multiple operands (data value) and produces a result.
+
+Math.floor method :-
+Round a number downward to its nearest integer.
+
+eval function :-
+eval() is a function property of the global object. 
+The argument of the eval() function is a string. 
+If the string represents an expression, eval() evaluates the expression. 
+If the argument represents one or more JavaScript statements, eval() evaluates the statements.
